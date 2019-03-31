@@ -2,7 +2,7 @@
 Python code for processing micro surface geometry data
 
 
-##How to get GSF files
+## How to get GSF files
 
 More gsf data files can be downloaded from
 
@@ -10,7 +10,7 @@ https://sid.erda.dk/wsgi-bin/ls.py?share_id=aHNMekcpg5
 
 
 
-##How to convert GSF files into mat files
+## How to convert GSF files into mat files
 
 The python script gsf2mat converts a specified gsf.file to a mat-file. Like this
 
@@ -20,7 +20,7 @@ python gsf2mat.py -i data/data1.gsf -o data/data1.mat
 
 This python script only uses numpy. 
 
-##How to convert mat files into obj files
+## How to convert mat files into obj files
 
 Before doing this you may want to verify that your environment is setup correctly.
 
@@ -53,7 +53,7 @@ https://github.com/alecjacobson/gptoolbox
 Observe that the matlab script mat2obj contains a file path string pointing to the location where gptoolbox is located. This you may have to update to reflect the location where you have chosen to clone gptoolbox.
 
 
-##How to view obj (mesh) files
+## How to view obj (mesh) files
 
 Mesh files can be inspected using any kind of software tool. For instance MeshLab can be quite convient for this.
 
@@ -65,9 +65,9 @@ Using MeshLab one will see the surface mesh files like so
 
 
 
-#Other Legacy Dependencies and Notes
+# Other Legacy Dependencies and Notes
 
-##OpenMesh
+## OpenMesh
 The open mesh library is used in the python script to write mesh files. 
 
 One can obtain the python version of OpenMesh from this url
@@ -83,17 +83,17 @@ sudo pip install -e .
 This will build and install OpenMesh on your system.
 
 
-##pyHull
+## pyHull
 
 This is used to get convex hulls of point sets (it is a python wrapper of qhull). It can be installed with pip.
 
 
-##Libigl
+## Libigl
 
 
 https://github.com/libigl/libigl
 
-##Setting proper versionn of Python
+## Setting proper versionn of Python
 
 Remember to set python37 (or newer) to be the python interpreter. Using macport this is one like this:
 
@@ -102,7 +102,7 @@ sudo port select --set python python37
 sudo port select --set python3 python37
 ```
 
-##Running xcode traget from commandline as root user
+## Running xcode traget from commandline as root user
 
 How to run an cmake generated install target in xcode as root user
 
