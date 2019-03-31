@@ -1,8 +1,23 @@
-# Microscopy Data
-Python code for processing micro surface geometry data
+# Microscopy Geometry
+Code for processing micro surface geometry data.
 
 
 ## How to get GSF files
+
+To get GSF files we will use the software gwyddion
+
+http://gwyddion.net/
+
+On mac os this is trivial installed using macports, like this
+
+````bash
+CN14804:~ nlp442$ sudo port install xorg-server
+CN14804:~ nlp442$ sudo port install gwyddion
+````
+
+
+
+
 
 More gsf data files can be downloaded from
 
