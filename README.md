@@ -59,9 +59,9 @@ Mesh files can be inspected using any kind of software tool. For instance MeshLa
 
 http://www.meshlab.net/
 
+Using MeshLab one will see the surface mesh files like so
 
-<img src='doc/images/meshlab_screen_shot_01.png'/>
-<img src='doc/images/meshlab_screen_shot_02.png'/>
+<img src='doc/images/meshlab_screen_shot_01.png' width='45%'/><img src='doc/images/meshlab_screen_shot_02.png' width='45%'/>
 
 
 
