@@ -15,11 +15,10 @@ CN14804:~ nlp442$ sudo port install xorg-server
 CN14804:~ nlp442$ sudo port install gwyddion
 ````
 
+Now open up gwyddion and load lext files into gwyddion and then save file as a gsf file.
 
 
-
-
-More gsf data files can be downloaded from
+More lext data files can be downloaded from
 
 https://sid.erda.dk/wsgi-bin/ls.py?share_id=aHNMekcpg5
 
