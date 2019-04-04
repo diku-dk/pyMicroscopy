@@ -15,13 +15,13 @@ CN14804:~ nlp442$ sudo port install xorg-server
 CN14804:~ nlp442$ sudo port install gwyddion
 ````
 
-Now open up gwyddion and load lext files into gwyddion and then save file as a gsf file.
+Now open up gwyddion and load lext files into gwyddion and then save file as a GSF file.
 
+<img src="doc/images/Screenshot 2019-03-31 at 20.56.42.png" width=45%/><img src="doc/images/Screenshot 2019-03-31 at 20.57.32.png" width=50%/>
 
 More lext data files can be downloaded from
 
 https://sid.erda.dk/wsgi-bin/ls.py?share_id=aHNMekcpg5
-
 
 
 ## How to convert GSF files into mat files
@@ -32,7 +32,7 @@ The python script gsf2mat converts a specified gsf.file to a mat-file. Like this
 python gsf2mat.py -i data/data1.gsf -o data/data1.mat
 ```
 
-This python script only uses numpy. 
+This python script only uses numpy.
 
 ## How to convert mat files into obj files
 
@@ -79,10 +79,29 @@ Using MeshLab one will see the surface mesh files like so
 
 
 
-# Other Legacy Dependencies and Notes
+# Legacy Notes
+
+Below are some notes on dependencies that we no longer use in this software.
+
+## Setting proper version of Python
+
+Remember to set python37 (or newer) to be the python interpreter. Using macport this is one like this:
+
+``` bash
+sudo port select --set python python37
+sudo port select --set python3 python37
+```
+
+## Running xcode traget from commandline as root user
+
+How to run an cmake generated install target in xcode as root user
+
+```bash
+sudo xcodebuild -target install
+```
 
 ## OpenMesh
-The open mesh library is used in the python script to write mesh files. 
+The open mesh library is used in the python script to write mesh files.
 
 One can obtain the python version of OpenMesh from this url
 
@@ -106,20 +125,3 @@ This is used to get convex hulls of point sets (it is a python wrapper of qhull)
 
 
 https://github.com/libigl/libigl
-
-## Setting proper versionn of Python
-
-Remember to set python37 (or newer) to be the python interpreter. Using macport this is one like this:
-
-``` bash
-sudo port select --set python python37
-sudo port select --set python3 python37
-```
-
-## Running xcode traget from commandline as root user
-
-How to run an cmake generated install target in xcode as root user
-
-````bash
-sudo xcodebuild -target install
-````
